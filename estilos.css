@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+.foto{
+    width: 150px;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+
+body{
+    width: 100vw;
+   overflow-x: hidden;
+   background-color: rgb(159, 158, 158);
+}
+
+header{
+    background-color:#0A1E33;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.cabeca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+section{
+    max-width: 1400px;
+    margin: auto;
+    padding: 15px;
+
+}
+
+.btn{
+    background-color: #053a5e;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    background-color: #30aafb;
+    color: #000;
+}
+
+.btn::after{
+ content: "";
+ position: absolute;
+ top: 0;
+ left: -75%;
+ width: 50%;
+ height: 100%;
+ transform: skewX(-25deg);
+ transition: all 0.5s;
+}
+
+.btn:hover::after {
+  left: 125%;
+}
+
+.log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log a{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.navegacao a{
+    position: relative;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    padding-bottom: 8px;
+    border: transparent;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.navegacao a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.navegacao a:hover::after {
+    width: 100%;
+}
+
+.main{
+    position: relative;
+    background: url(img/fundo-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    height: 100vh;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.main-box{
+    width: 500px;
+    padding: 20px;
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    background: transparent;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.main-box h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.main-box p{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.section-1{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .container-1{
+    background-color: #fff ;
+    padding: 20px 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.container-1 h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+
+.container-1 p{
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.section-2{
+   background-color: #fff; 
+   border-radius: 8px;
+}
+
+.foto-carro{
+    width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carro{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.carro-box{
+    background-color: lightgray;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+   box-shadow: rgba(0, 0, 0, 0.393) 0px 5px 15px;
+}
+
+.carro-box:hover{
+    background-color: rgba(180, 179, 179, 0.788);
+}
+
+.carro-box p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.carro-box h3,p ,img{
+    margin-bottom: 15px;
+}
+
+.contatos{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-box{
+    background-color:white;
+    width: 700px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.contato-box h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 10px 0px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.formulario input:hover{
+    border: 2px solid rgb(42, 131, 233);
+    box-shadow: 0px 0px 10px 0px rgb(0, 157, 255);
+}
+
+.formulario input, textarea{
+    background-color: #d2cece;
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: transparent;
+    outline: none;
+    padding: 12px;
+    transition: 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.formulario input::placeholder{
+    color: rgb(22, 22, 130);
+
+}
+
+.formulario textarea{
+    height: 80px;
+    resize: none;
+}
+
+.formulario textarea::placeholder{
+    color: rgb(22, 22, 130);
+}
+
+.formulario textarea:hover{
+    border: 2px solid rgb(42, 131, 233);
+    box-shadow: 0px 0px 10px 0px rgb(0, 157, 255);
+}
+
+footer{
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+.rodape{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.rodape i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0px 10px;
+    color: rgb(17, 17, 201);
+    padding: 10px 20px;
+    border-radius: 50%;
+    outline: 2px solid rgb(17, 17, 201);;
+}
+
+.rodape i:hover{
+    background-color: rgb(17, 17, 201);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
