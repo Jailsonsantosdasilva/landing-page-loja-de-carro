@@ -16,18 +16,18 @@
           <h1>LUXCAR</h1>
         </div>
         <nav class="navLinks">
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
           <a href="#sobre">Sobre</a>
           <a href="#carros">Carros</a>
           <a href="#contatos">Contatos</a>
         </nav>
-        <div class="toggle-bars">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+        <button class="toggle-bars" aria-label="Abrir menu">
+  <i class="fa-solid fa-bars"></i>
+</button>
       </div>
     </header>
 
-    <main class="principal">
+    <main class="principal" id="home">
       <div class="texto-principal">
         <h2>Bem-vindo a LUXCAR.</h2>
         <p>Na LUXCAR, oferecemos uma seleção exclusiva de veículos de alta performance e luxo, projetados para proporcionar uma experiência de condução incomparável. Explore nossa coleção e descubra o carro que combina perfeitamente com seu estilo e paixão por velocidade.</p>
@@ -105,7 +105,7 @@
      data-aos-duration="1500">
         <h3>Seu contato</h3>
         <input type="text" placeholder="Nome">
-        <input type="number" placeholder="Numero">
+        <input type="tel" placeholder="Numero">
         <input type="text" placeholder="Endereço">
         <button class="btn">Enviar</button>
       </form>
@@ -116,7 +116,6 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
   </body>
 </html>
